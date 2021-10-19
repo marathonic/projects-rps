@@ -8,19 +8,12 @@ function computerPlay() {
 
 
 /*
-$("button").click(function() {
-    let firedButton = $(this).val();
-    console.log(firedButton);
-});
-
-
 function singleRound(playerSelection, computerSelection) {
         
     
     computerSelection = computerPlay();
 
 }
-*/
 
 function pressRock() {
     document.getElementById('demoRock').textContent = 'YO!'
@@ -32,7 +25,28 @@ function pressPaper() {
 
 }
 
+*/
 
-function playerSelection(pressed)  {
-    alert(pressed);
+let playerChoice;
+
+const playerSelection = function(pressed)  {
+    playerChoice = pressed;
 }
+
+
+    
+function singleRound(playerPlays, computerPlays)    {
+   
+    playerPlays = playerChoice;
+    computerPlays = computerPlay();
+    console.log(playerPlays);
+    console.log(computerPlays);
+}
+
+
+/*
+function singleRound(playerPlays, computerPlays)    {
+    playerPlays = playerSelection();
+    computerPlays = computerPlay();
+}
+*/

@@ -12,9 +12,9 @@
 <div class="container">
     <h1>Best out of three</h1>
     <div class="choiceDiv">
-        <button id="rock" onclick="playerSelection(this.id)"></button>
-        <button id="paper" onclick="playerSelection(this.id)"></button>
-        <button id="scissors" onclick="playerSelection(this.id)"></button>
+        <button id="rock" onclick="playerSelection(this.id); singleRound();"></button>
+        <button id="paper" onclick="playerSelection(this.id); singleRound();"></button>
+        <button id="scissors" onclick="playerSelection(this.id); singleRound()"></button>
     </div>
     <div class="scoreDiv">
         <div class="humanName">Human: <p class="humanScore">0</p></div>
