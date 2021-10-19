@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: palevioletred;
+    color: antiquewhite;
+    border: 0.5rem outset pink;
+    outline: 0.5rem solid khaki;
+    box-shadow: 0 0 0 2rem skyblue;
+    font: bold 1rem sans-serif;
+    font-size: 60px;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+
+h1 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+button:hover,
+a:hover {
+    filter: contrast(200%);
+}
+
+.choiceDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 97px;
+}
+
+#rock {
+    background: url(./rock.png) no-repeat;
+    border: none;
+    width: 350px;
+    height: 360px;
+    cursor: pointer;
+}
+
+#paper {
+    background: url(./paper.png) no-repeat;
+    border: none;
+    width: 350px;
+    height: 360px;
+    cursor: pointer;
+}
+
+
+#scissors {
+    background: url(./scissors.jpg) no-repeat;
+    border: none;
+    width: 350px;
+    height: 360px;
+    cursor: pointer;
+}
+
+.scoreDiv {
+    font-size: 33px;
+    font-weight: bold;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    
+}
+
+.humanName {
+    border: 0.5rem outset pink;
+    outline: 0.5rem solid antiquewhite;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    font-size: 60px;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+}
+
+.cpuName {
+    border: 0.5rem outset pink;
+    outline: 0.5rem solid antiquewhite;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    font-size: 60px;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+}
+
+.buttonClicked {
+    border: palegoldenrod;
+    
+}
+
+.buttonDefault {
+    border: none;
+}
