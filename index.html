@@ -17,12 +17,17 @@
         <button id="scissors" onclick="playerSelection(this.id); singleRound()"></button>
     </div>
     <div class="scoreDiv">
-        <div class="humanName">Human: <p class="humanScore">0</p></div>
-            <div class="playerScore">0</div>    
-        <div class="cpuName">CPU:</div>
-            <div class="cpuScore">0</div>
-    
+        <div class="humanName">Human <p id="humanScore">0</p></div>
+        <div class="cpuName">CPU <p id="cpuScore">0</p></div>
+            
     </div>
+    <div id="overlay">
+        <div id="overlayText">Default Text</div>
+        <button id="overlayButton" onclick="refreshPage()">Play again</button>
+    </div>
+
 </div>
+<audio id="chime" src="chime.mp3"></audio>
+
 </body>
 </html>
