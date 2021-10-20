@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Junta 3 puntos para ganar</h1>
+    <div class="choiceDiv">
+        <button id="rock" onclick="playerSelection(this.id); singleRound();"></button>
+        <button id="paper" onclick="playerSelection(this.id); singleRound();"></button>
+        <button id="scissors" onclick="playerSelection(this.id); singleRound()"></button>
+    </div>
+    <div class="scoreDiv">
+        <div id="humanName">Mamá <p id="humanScore">0</p></div>
+        <div class="cpuName">CPU <p id="cpuScore">0</p></div>
+            
+    </div>
+    <div id="overlay">
+        <div id="overlayText">Default Text</div>
+        <button id="overlayButton" onclick="refreshPage()">Jugar más</button>
+    </div>
+
+</div>
+<audio id="chime" src="chime.mp3"></audio>
+
+</body>
+</html>
